@@ -1,27 +1,22 @@
 # Laravel PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Scenario
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+ACME’s technical infrastructure includes an API Gateway.  The gateway offers a number of recipe operations.  Recipes contain a lot of information such as cuisine, customer ratings & comments, stock levels and diet types.
+Your task is to design, develop and deliver to us your version of a set of recipe operations.  Your solution should meet our functional and nonfunctional requirements below.
+### Functional Requirements
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Your API must offer the following operations:
+·         Fetch a recipe by id
+·         Fetch all recipes for a specific cuisine (should paginate)
+·         Rate an existing recipe between 1 and 5
+·         Update an existing recipe
+·         Store a new recipe
 
-## Official Documentation
+Don’t include any client code e.g. HTML
+The service should provide a set of RESTful JSON based routes
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+###Non-functional Requirements
+·         The service must be built using a modern web application framework
+·         The code should be ‘production ready’
+·         The service should use the accompanying data contained in the Google Doc link (please download as a CSV) as the primary data source, which can be loaded into memory (please don’t use a database).  Feel free to generate additional test data based on the same scheme if it helps.
